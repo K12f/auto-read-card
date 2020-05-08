@@ -79,7 +79,7 @@ func scan() {
 	draw.Draw(newIm, im.Bounds(), im, newIm.Bounds().Min, draw.Src)
 
 	for w := widthMid + 100; w < widthMid+400; w++ {
-		for h := heightMid - 100; h < widthMid+100; h++ {
+		for h := heightMid - 100; h < heightMid+100; h++ {
 			pointColor := im.At(w, h)
 
 			r := pointColor.(color.NRGBA).R
