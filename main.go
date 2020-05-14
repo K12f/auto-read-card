@@ -85,9 +85,7 @@ func scan() {
 			r := pointColor.(color.NRGBA).R
 			g := pointColor.(color.NRGBA).G
 			b := pointColor.(color.NRGBA).B
-			if r >= 180 {
-				continue
-			}
+		
 
 			if r >= uint8(colorP.r-20) && r <= uint8(colorP.r+20) &&
 				g >= uint8(colorP.g-20) && g <= uint8(colorP.g+20) &&
